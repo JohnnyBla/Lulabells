@@ -148,3 +148,54 @@ filter: drop-shadow(1px 5px 6px #333)
   background-color: black;
 }
 
+
+/* Content Section Css */
+
+.ContentTitle{
+  font-family: 'Cinzel', serif; 
+  width: 100%;
+  background: -webkit-linear-gradient(#f8d57b, white);
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+filter: drop-shadow(1px 5px 6px #333)
+
+}
+
+
+.PlateBackground{
+  background-image: url('../../../shared/Images/plate.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.orderNow {
+  font-family: 'Cinzel', serif; 
+
+  display: flex;
+  flex-direction: row;
+  color: white
+}
+.orderNow:before, .orderNow:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.orderNow:before {
+  margin-right: 10px
+}
+.orderNow:after {
+  margin-left: 10px
+}
+
+.aws-btn--primary .aws-btn__content{
+  background: red !important;
+}
+
+.buttonImage{
+  width: auto;
+  min-height: 30px;
+  max-height: 100%;
+}

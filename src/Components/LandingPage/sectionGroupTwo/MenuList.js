@@ -6,7 +6,7 @@ const MenuList = ({ name, id }) => {
   const [expanded, setExpanded] = useState(false);
   const styles = useSpring({
     from: { x: 600 },
-    config: { duration: 2000 },
+    config: { duration: 1500 },
     loop: {
       x: 0,
     },
