@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+.MenuLabel{
+    font-size: 70px;
+    font-family: 'Cinzel', serif;
+    word-spacing: 0ch;
+    letter-spacing: -5px;
+    background: -webkit-linear-gradient(#f8d57b, white);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 5px 6px #333)
+
+}
+
+.MenuList{
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 5px 6px black;
+    word-spacing: 0ch;
+    color: rgb(159, 154, 245) !important;
+    list-style: none;
+}
+
+.question {
+    color: white;
+    padding: 1rem 1.5rem;
+    border-top: 2px solid black;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: -5px -4px 35px rgba(237,231,197,255)
+  }
+  .question:hover{
+    transition: 1s;
+    box-shadow: none;
+  }
+  .question h4 {
+    text-transform: none;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .question p {
+    color: var(--clr-grey-3);
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  .question header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .question header h4 {
+    margin-bottom: 0;
+  }
+  .btnType {
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+  }
+  
+  .question-title {
+    cursor: pointer;
+    
+  }
+
+  .menuDesign{
+    background-color: black;
+    box-shadow: -5px -4px 25px rgba(237,231,197,255);
+    position: sticky;
+    border-radius: 15px;
+
+    
+  }
+  .menuOrganize{
+    color: white;
+    text-shadow: 1px 2px 20px rgb(250,219,128,255);
+  }
+
+  .menuHeader{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(132, 219, 253) !important;
+
+
+  }
+
+  .FullMenuText{
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif; 
+    color: rgba(237,231,197,255) !important;
+
+  }
+  .visible {
+    visibility: visible;
+    opacity: 0.8;
+    transition: opacity 1s linear;
+  }
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.ModalLabel{
+  font-size: 24px;
+  font-family: 'Cinzel', serif; 
+  background: -webkit-linear-gradient(#f8d57b, white);
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+filter: drop-shadow(1px 5px 6px #333)
+}
+
+.ModalTitle{
+  font-size: 16px;
+  font-family: 'Cinzel', serif; 
+  background: -webkit-linear-gradient(#f8d57b, white);
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+filter: drop-shadow(1px 5px 6px #333)
+}
+
+.ModalAlert{
+  color: red
+}
+
+
+
+.summary {
+  color: white;
+}
+
+
+.modalBackground{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488) 80%, #f8d57b60), url('../../../shared/Images/table_set.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+

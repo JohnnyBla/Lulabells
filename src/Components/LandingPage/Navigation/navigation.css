@@ -1,0 +1,42 @@
+.navColor{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.OrderButton{
+    background-color: rgba(0,205,255,255) !important;
+    box-shadow: white -1px -1px 5px;
+}
+
+.OrderButton:hover{
+    transition: 1s;
+    border-radius: 15px;
+    box-shadow: white -1px -1px 15px;
+    background-color: rgb(194, 225, 238) !important;
+}
+.ReserveButton{
+    background-color: rgba(250,219,128,255) !important;
+    box-shadow: white -1px -1px 5px;
+}
+.ReserveButton:hover{
+    transition: 1s;
+    border-radius: 15px;
+    box-shadow: white -1px -1px 15px;
+
+    background-color: rgb(194, 225, 238) !important;
+}
+
+.BarsButton{
+    background-color: rgb(250,219,128,255) !important;
+}
+
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black
+}
+
+.primaryr{
+    color: black !important;
+}
