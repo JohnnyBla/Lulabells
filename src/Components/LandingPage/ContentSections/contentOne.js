@@ -11,9 +11,10 @@ const ContentOne = () => {
       animateIn='animate__fadeInLeftBig'
       animateOnce={true}
       duration={2}
+      className='p-2 mb-3'
     >
-      <div className='row mt-5 PlateBackground p-2 mb-3'>
-        <div className='col-md-4 col mt-3 p-2 mb-3'>
+      <div className='row mt-5 PlateBackground '>
+        <div className='col-md-4 col mt-3 p-2 mb-3 mx-4'>
           <h1 className='text-center text-capitalize ContentTitle'>
             Get It Delivered To You
           </h1>
