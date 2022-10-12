@@ -199,3 +199,10 @@ filter: drop-shadow(1px 5px 6px #333)
   min-height: 30px;
   max-height: 100%;
 }
+
+.footer{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.151);
+  color: white;
+  
+}

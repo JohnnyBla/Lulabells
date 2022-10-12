@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import LandingPage from '../../Pages/LandingPage';
 import LulaBContent from '../../Pages/LulaBContent';
 import ReservedModal from '../OnlineOrders/Reservations';
+import Footer from '../../shared/footer';
 import { useSelector } from 'react-redux';
 
 const Main = () => {
@@ -15,6 +16,7 @@ const Main = () => {
         <Route path='/' element={<LandingPage />} />
         <Route path='/lulabelle' element={<LulaBContent />} />
       </Routes>
+      <Footer />
     </>
   );
 };
