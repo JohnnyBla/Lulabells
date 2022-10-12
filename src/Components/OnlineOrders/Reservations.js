@@ -54,7 +54,7 @@ const ReservedModal = () => {
       setAlert('A number is required');
     } else {
       setAlert('');
-
+      noModal();
       console.log(reservation);
     }
   };
