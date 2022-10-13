@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBFooter } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
           </div>
           <div className='col text-end text-uppercase'>
             &copy; {new Date().getFullYear()} Lulabeles, All Rights Reserved. |{' '}
-            <a href='tel:+123456789'> contact us</a>
+            <Link to='contactUs'> contact us</Link>
           </div>
         </div>
       </div>

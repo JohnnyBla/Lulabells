@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LandingPage from '../../Pages/LandingPage';
-import LulaBContent from '../../Pages/LulaBContent';
+import LulaBContactUs from '../../Pages/LulaBContactUs';
 import ReservedModal from '../OnlineOrders/Reservations';
 import Footer from '../../shared/footer';
 import { useSelector } from 'react-redux';
@@ -14,7 +14,7 @@ const Main = () => {
 
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='/lulabelle' element={<LulaBContent />} />
+        <Route path='/contactUs' element={<LulaBContactUs />} />
       </Routes>
       <Footer />
     </>

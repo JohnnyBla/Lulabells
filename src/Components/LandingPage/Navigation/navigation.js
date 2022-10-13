@@ -4,6 +4,7 @@ import { MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
 import Navbar from 'react-bootstrap/Navbar';
 import { useDispatch } from 'react-redux';
 import { openModal } from '../../../redux/modalReducer';
+import { Link } from 'react-router-dom';
 
 const Navigate = () => {
   const dispatch = useDispatch();
@@ -28,12 +29,15 @@ const Navigate = () => {
         <Navbar.Collapse id='navbarScroll'>
           <div className='row align-items-center'>
             <div className='col text-center'>
-              <img
-                src={require('../../../shared/Images/LulaBellesNew.png')}
-                alt='LulaBelles'
-                width='100%'
-                height='auto'
-              />
+              <Link to='/'>
+                <img
+                  src={require('../../../shared/Images/LulaBellesNew.png')}
+                  alt='LulaBelles'
+                  width='100%'
+                  height='auto'
+                  to='/'
+                />
+              </Link>
             </div>
             <div className='col-md-8 col text-end d-inline-block '>
               <MDBBtn size='lg' className='OrderButton me-2'>
