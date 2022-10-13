@@ -17,7 +17,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className='col text-end text-uppercase'>
-            &copy; {new Date().getFullYear()} Lulabeles, All Rights Reserved. |{' '}
+            &copy; {new Date().getFullYear()} Lulabelles, All Rights Reserved. |{' '}
             <Link to='contactUs'> contact us</Link>
           </div>
         </div>
