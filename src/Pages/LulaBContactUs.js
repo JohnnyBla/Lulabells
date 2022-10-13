@@ -50,6 +50,7 @@ const LulaBContactUs = () => {
                   type='text'
                   className='form-control form-control-lg'
                   id='name'
+                  placeholder='Name'
                 />
               </div>
               <div className='mb-3'>
@@ -69,6 +70,7 @@ const LulaBContactUs = () => {
                   type='email'
                   className='form-control form-control-lg'
                   id='email'
+                  placeholder='Email Address'
                 />
               </div>
               <div className='mb-3'>
@@ -79,6 +81,7 @@ const LulaBContactUs = () => {
                   type='tel'
                   className='form-control form-control-lg'
                   id='phoneNum'
+                  placeholder='Phone Number'
                 />
               </div>
               <div className='mb-3'>
@@ -99,6 +102,7 @@ const LulaBContactUs = () => {
                   type='text'
                   className='form-control'
                   id='message'
+                  placeholder='contact us'
                 />
               </div>
               <div className='d-grid'>
