@@ -32,7 +32,7 @@ const LulaBContactUs = () => {
           <div className='container-fluid mb-5 '>
             <div className='row justify-content-center mt-5 mx-auto p-5'>
               <div className='col-lg-4 col-12'>
-                <h1 className='MenuLabel'>LulaBelles</h1>
+                <h1 className='ContentTitle'>LulaBelles</h1>
                 <h3 className='menuOrganize'>Comments or Questions</h3>
                 <p className='text-white menuOrganize'>
                   Please submit form and you will be contacted by one of our
