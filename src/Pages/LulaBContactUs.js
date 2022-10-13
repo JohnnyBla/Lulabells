@@ -9,7 +9,7 @@ const LulaBContactUs = () => {
       <HigherNav />
       <Navigate />
       <div className='container-fluid mb-5'>
-        <div className='row justify-content-center mt-5 mx-auto p-4'>
+        <div className='row justify-content-center mt-5 mx-auto p-5'>
           <div className='col-md-3 col-12'>
             <h1>LulaBelles</h1>
             <h3>Comments or Questions</h3>
