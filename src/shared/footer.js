@@ -8,11 +8,13 @@ const Footer = () => {
       <div className='p-4 container'>
         <div className='row align-items-center mt-2'>
           <div className='col-md-2 col'>
-            <img
-              src={require('../shared/Images/LulaBellesNew.png')}
-              alt='LulaBelles'
-              className='img-fluid'
-            />
+            <Link to='/'>
+              <img
+                src={require('../shared/Images/LulaBellesNew.png')}
+                alt='LulaBelles'
+                className='img-fluid'
+              />
+            </Link>
           </div>
           <div className='col text-end text-uppercase'>
             &copy; {new Date().getFullYear()} Lulabeles, All Rights Reserved. |{' '}

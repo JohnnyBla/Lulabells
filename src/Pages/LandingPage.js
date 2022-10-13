@@ -19,7 +19,7 @@ const LandingPage = () => {
         <div className='row '>
           <SectionOneTwo />
         </div>
-        <div className='container'>
+        <div className='container '>
           <ContentOne />
         </div>
       </div>

@@ -98,3 +98,7 @@
     position: absolute;
     transition-timing-function: ease-in;
 }
+
+.ContactUsBg{
+    background: #5b5e6e;
+}
