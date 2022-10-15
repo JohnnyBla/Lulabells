@@ -13,7 +13,7 @@ const OrderPage = () => {
   return (
     <div className='container mt-5 OrderBg'>
       <div className='row'>
-        <div className='text-danger col-6 How-To'>
+        <div className='text-white col-6 How-To'>
           <h3>How Too?</h3>
           <p>Click Item to add to the Cart</p>
           <p>Edit Quantity by clicking on the Cart Icon</p>
