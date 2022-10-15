@@ -16,7 +16,7 @@ const OrderMenu = ({ name, id, price }) => {
       size='lg'
       onClick={HandleClick}
     >
-      <div className='row'>
+      <div className='row align-items-center'>
         <div className='col'>{name}</div>${price}
       </div>
     </MDBBtn>
