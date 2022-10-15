@@ -25,7 +25,6 @@ const cartSlice = createSlice({
         }
         return false;
       });
-      console.log(state.cartItems);
     },
     removeItem: (state, action) => {
       const itemId = action.payload;

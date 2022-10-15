@@ -11,8 +11,10 @@ const OrderMenu = ({ name, id, price }) => {
   return (
     <MDBBtn
       rounded
-      className='mx-2 my-2'
-      style={{ backgroundColor: '#ac2bac' }}
+      color='white'
+      outline
+      className='mx-2 my-2 OrderPageBtn'
+      style={{ backgroundColor: '#ac2bacc5' }}
       size='lg'
       onClick={HandleClick}
     >

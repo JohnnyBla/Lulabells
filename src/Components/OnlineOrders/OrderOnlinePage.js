@@ -11,7 +11,7 @@ const OrderPage = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className='container mt-5'>
+    <div className='container mt-5 OrderBg'>
       <div className='row'>
         <div className='text-danger col-6 How-To'>
           <h3>How Too?</h3>
@@ -93,8 +93,8 @@ const OrderPage = () => {
               })}
           </div>
         </div>
-        <div className='row mt-2 text-center'>
-          <div className='col mx-auto'>
+        <div className='row mt-2 text-center '>
+          <div className='col mx-auto mb-3'>
             <h2 className='ContentTitle mt-2'>Desserts</h2>
             {menuItems
               .filter((item) => item.type === 5)
