@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './sectionOneTwo.css';
 import { MDBIcon, MDBCard, MDBCardBody, MDBCardTitle } from 'mdb-react-ui-kit';
-import { MENU } from '../../../shared/Menu/Menu';
+import { menuItems } from '../../../shared/Menu/menuItems';
 import FullMenu from './fullMenu';
 import MenuList from './MenuList';
 
@@ -42,28 +42,36 @@ const SectionOneTwo = () => {
               <MDBCard alignment='center' className='menuDesign mx-auto'>
                 <MDBCardBody>
                   <MDBCardTitle className='menuOrganize'>Salads</MDBCardTitle>
-                  {MENU.Salad.map((items) => {
-                    return <FullMenu key={items.id} {...items} />;
-                  })}
+                  {menuItems
+                    .filter((item) => item.type === 3)
+                    .map((item) => {
+                      return <FullMenu key={item.id} {...item} />;
+                    })}
                   <MDBCardTitle className='menuOrganize'>
                     Appetizers
                   </MDBCardTitle>
-                  {MENU.Appetizers.map((items) => {
-                    return <FullMenu key={items.id} {...items} />;
-                  })}
+                  {menuItems
+                    .filter((item) => item.type === 1)
+                    .map((item) => {
+                      return <FullMenu key={item.id} {...item} />;
+                    })}
                   <MDBCardTitle className='menuOrganize'>Dessert</MDBCardTitle>
-                  {MENU.Dessert.map((items) => {
-                    return <FullMenu key={items.id} {...items} />;
-                  })}
+                  {menuItems
+                    .filter((item) => item.type === 5)
+                    .map((item) => {
+                      return <FullMenu key={item.id} {...item} />;
+                    })}
                 </MDBCardBody>
               </MDBCard>
             </section>
           </div>
           <div className={`col-md-6 col-12 ms-auto`}>
             <section>
-              {MENU.Entress.map((items) => {
-                return <MenuList key={items.id} {...items} />;
-              })}
+              {menuItems
+                .filter((item) => item.type === 2)
+                .map((item) => {
+                  return <MenuList key={item.id} {...item} />;
+                })}
             </section>
           </div>
         </div>

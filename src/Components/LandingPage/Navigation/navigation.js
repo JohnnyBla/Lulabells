@@ -7,9 +7,8 @@ import { openModal } from '../../../redux/modalReducer';
 import { Link } from 'react-router-dom';
 
 const Navigate = () => {
-  const { items } = useSelector((state) => state.cart);
+  const { amount } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  console.log(items.length);
   const handleModalToggler = () => {
     dispatch(openModal());
   };
@@ -57,17 +56,19 @@ const Navigate = () => {
               </MDBBtn>
             </div>
             <div className='col-sm-12 col-lg mb-3'>
-              <MDBBtn floating size='lg' color='black' tag='a'>
-                <MDBIcon fas icon='shopping-cart' size='lg' color='white' />
-              </MDBBtn>
-              <MDBBadge
-                color='danger'
-                className='badgePlease'
-                notification
-                pill
-              >
-                {items.length}
-              </MDBBadge>
+              <Link to='/shoppingCart'>
+                <MDBBtn floating size='lg' color='black' to='/shoppingCart'>
+                  <MDBIcon fas icon='shopping-cart' size='lg' color='white' />
+                </MDBBtn>
+                <MDBBadge
+                  color='black'
+                  className='badgePlease'
+                  notification
+                  pill
+                >
+                  {amount}
+                </MDBBadge>
+              </Link>
             </div>
           </div>
         </Navbar.Collapse>
