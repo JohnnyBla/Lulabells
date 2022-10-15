@@ -1,8 +1,9 @@
 import React from 'react';
-import { MDBBtn } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBIcon, MDBNavbar } from 'mdb-react-ui-kit';
 import CartItem from './CartItems';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearCart } from '../../redux/cartReducer';
+import { Link } from 'react-router-dom';
 
 const ShoppingBag = () => {
   const { total, amount, cartItems } = useSelector((state) => state.cart);
@@ -11,7 +12,13 @@ const ShoppingBag = () => {
   if (amount < 1) {
     return (
       <div className='container text-center mt-5'>
-        <h1 className='font-monospace'>Your Bag</h1>
+        <MDBNavbar light bgColor='black'>
+          <Link to='/' className='mx-auto mt-1'>
+            <MDBIcon fas icon='home' size='3x' color='warning' />
+            Click to go home
+          </Link>
+        </MDBNavbar>
+        <h1 className='font-monospace ContentTitle mt-2'>Your Bag</h1>
         <div className='row my-1'>
           <p className='font-monospace text-muted'> is currently Empty</p>
         </div>
@@ -20,37 +27,43 @@ const ShoppingBag = () => {
   }
   return (
     <div className='container mt-5'>
-      <h1 className='font-monospace text-center'>Your Bag</h1>
+      <MDBNavbar light bgColor='black'>
+        <Link to='/' className='mx-auto mt-1'>
+          <MDBIcon fas icon='home' size='3x' color='warning' />
+          Click to go home
+        </Link>
+      </MDBNavbar>
+      <h1 className='font-monospace text-center ContentTitle'>Your Bag</h1>
       <div className='row my-4 d-grid mb-5'>
-        <h2 className='text-center'>Appetizers</h2>
+        <h2 className='text-center mb-2 ContentTitle'>Appetizers</h2>
 
         {cartItems
           .filter((item) => item.type === 1)
           .map((item) => {
             return <CartItem key={item.id} {...item} />;
           })}
-        <h2 className='text-center'>Entrees</h2>
+        <h2 className='text-center mb-2 ContentTitle'>Entrees</h2>
 
         {cartItems
           .filter((item) => item.type === 2)
           .map((item) => {
             return <CartItem key={item.id} {...item} />;
           })}
-        <h2 className='text-center'>Salads</h2>
+        <h2 className='text-center mb-2 ContentTitle'>Salads</h2>
 
         {cartItems
           .filter((item) => item.type === 3)
           .map((item) => {
             return <CartItem key={item.id} {...item} />;
           })}
-        <h2 className='text-center'>Sides</h2>
+        <h2 className='text-center mb-2 ContentTitle'>Sides</h2>
 
         {cartItems
           .filter((item) => item.type === 4)
           .map((item) => {
             return <CartItem key={item.id} {...item} />;
           })}
-        <h2 className='text-center'>Desserts</h2>
+        <h2 className='text-center mb-2 ContentTitle'>Desserts</h2>
 
         {cartItems
           .filter((item) => item.type === 5)

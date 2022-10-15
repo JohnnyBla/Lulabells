@@ -4,11 +4,12 @@ import { MDBIcon, MDBBtn, MDBBadge } from 'mdb-react-ui-kit';
 import Navbar from 'react-bootstrap/Navbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { openModal } from '../../../redux/modalReducer';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navigate = () => {
   const { amount } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const handleModalToggler = () => {
     dispatch(openModal());
   };
@@ -42,7 +43,11 @@ const Navigate = () => {
             </div>
 
             <div className='col-md-8 col-12 text-lg-end mb-3'>
-              <MDBBtn size='lg' className='OrderButton me-2 '>
+              <MDBBtn
+                size='lg'
+                className='OrderButton me-2'
+                onClick={() => navigate('/orderOnline')}
+              >
                 Order Online
               </MDBBtn>
             </div>

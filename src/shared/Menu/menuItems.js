@@ -5,6 +5,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 1,
+    price: 2.99,
   },
   {
     id: 1,
@@ -12,6 +13,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 1,
+    price: 2.99,
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 1,
+    price: 2.99,
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 1,
+    price: 2.99,
   },
   {
     id: 4,
@@ -33,6 +37,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 1,
+    price: 2.99,
   },
   {
     id: 5,
@@ -40,6 +45,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 1,
+    price: 2.99,
   },
   {
     id: 6,
@@ -47,6 +53,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 1,
+    price: 2.99,
   },
 
   {
@@ -96,6 +103,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 3,
+    price: 2.99,
   },
   {
     id: 13,
@@ -103,6 +111,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 3,
+    price: 2.99,
   },
   {
     id: 14,
@@ -110,6 +119,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 3,
+    price: 2.99,
   },
 
   {
@@ -118,6 +128,7 @@ export const menuItems = [
     feature: true,
     amount: 1,
     type: 4,
+    price: 2.99,
   },
   {
     id: 16,
@@ -125,6 +136,7 @@ export const menuItems = [
     feature: true,
     amount: 1,
     type: 4,
+    price: 2.99,
   },
   {
     id: 17,
@@ -132,6 +144,7 @@ export const menuItems = [
     feature: true,
     amount: 1,
     type: 4,
+    price: 2.99,
   },
   {
     id: 18,
@@ -139,6 +152,7 @@ export const menuItems = [
     feature: true,
     amount: 1,
     type: 4,
+    price: 2.99,
   },
   {
     id: 19,
@@ -146,6 +160,7 @@ export const menuItems = [
     feature: true,
     amount: 1,
     type: 4,
+    price: 2.99,
   },
   {
     id: 20,
@@ -153,6 +168,7 @@ export const menuItems = [
     feature: true,
     amount: 1,
     type: 4,
+    price: 2.99,
   },
 
   {
@@ -161,6 +177,7 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 5,
+    price: 2.99,
   },
   {
     id: 22,
@@ -168,5 +185,6 @@ export const menuItems = [
     featured: true,
     amount: 1,
     type: 5,
+    price: 2.99,
   },
 ];

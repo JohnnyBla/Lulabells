@@ -4,6 +4,7 @@ import LandingPage from '../../Pages/LandingPage';
 import LulaBContactUs from '../../Pages/LulaBContactUs';
 import ReservedModal from '../OnlineOrders/Reservations';
 import ShoppingBag from '../Cart/shoppingBag';
+import OrderPage from '../OnlineOrders/OrderOnlinePage';
 import Footer from '../../shared/footer';
 import { calculateTotals, clearCart } from '../../redux/cartReducer';
 import { useSelector, useDispatch } from 'react-redux';
@@ -29,6 +30,7 @@ const Main = () => {
         <Route path='/' element={<LandingPage />} />
         <Route path='/contactUs' element={<LulaBContactUs />} />
         <Route path='/shoppingCart' element={<ShoppingBag />} />
+        <Route path='/orderOnline' element={<OrderPage />} />
       </Routes>
       <Footer />
     </>

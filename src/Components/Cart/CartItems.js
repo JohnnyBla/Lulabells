@@ -7,7 +7,7 @@ const CartItem = ({ id, img, name, price, amount }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className='container'>
+    <div className='container text-white'>
       <div className='row d-flex px-4'>
         <img
           className='img-fluid pb-3'
