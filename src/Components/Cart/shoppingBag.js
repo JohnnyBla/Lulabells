@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBtn, MDBIcon, MDBNavbar } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBIcon, MDBNavbar, MDBBadge } from 'mdb-react-ui-kit';
 import CartItem from './CartItems';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearCart } from '../../redux/cartReducer';
@@ -11,12 +11,27 @@ const ShoppingBag = () => {
 
   if (amount < 1) {
     return (
-      <div className='container text-center mt-5'>
-        <MDBNavbar light bgColor='black'>
-          <Link to='/' className='mx-auto mt-1'>
-            <MDBIcon fas icon='home' size='3x' color='warning' />
-            Click to go home
-          </Link>
+      <div className='container text-center mt-5 ShoppingBg'>
+        <MDBNavbar light bgColor='light' className='text-center'>
+          <div className='col'>
+            <Link to='/' className='mt-1'>
+              <MDBIcon fas icon='home' size='3x' color='warning' />
+              Click to go home
+            </Link>
+          </div>
+          <div className='col'>
+            <Link to='/orderOnline'>
+              <MDBIcon fas icon='angle-double-left' size='2x' color='warning' />
+              <MDBBadge
+                color='light'
+                className='badgeNumber mx-1'
+                notification
+                pill
+              >
+                {amount}
+              </MDBBadge>{' '}
+            </Link>
+          </div>
         </MDBNavbar>
         <h1 className='font-monospace ContentTitle mt-2'>Your Bag</h1>
         <div className='row my-1'>
@@ -26,12 +41,28 @@ const ShoppingBag = () => {
     );
   }
   return (
-    <div className='container mt-5'>
-      <MDBNavbar light bgColor='black'>
-        <Link to='/' className='mx-auto mt-1'>
-          <MDBIcon fas icon='home' size='3x' color='warning' />
-          Click to go home
-        </Link>
+    <div className='container mt-5 ShoppingBg'>
+      <MDBNavbar light bgColor='light' className='text-center'>
+        <div className='col'>
+          <Link to='/' className='mt-1'>
+            <MDBIcon fas icon='home' size='3x' color='warning' />
+            Click to go home
+          </Link>
+        </div>
+        <div className='col'>
+          <Link to='/orderOnline'>
+            <MDBIcon fas icon='angle-double-left' size='2x' color='warning' />
+            <MDBBadge
+              color='none'
+              className='badgeNumber mx-1 '
+              notification
+              pill
+            >
+              {amount}
+            </MDBBadge>{' '}
+            Order Online
+          </Link>
+        </div>
       </MDBNavbar>
       <h1 className='font-monospace text-center ContentTitle'>Your Bag</h1>
       <div className='row my-4 d-grid mb-5'>

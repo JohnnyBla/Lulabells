@@ -238,6 +238,15 @@ filter: drop-shadow(1px 5px 6px #333)
   color: black
 }
 
+/* shopping bag */
+.ShoppingBg{
+  background-image: linear-gradient(to bottom, #f8d57b62, rgba(255, 253, 253, 0.488) ), url('../../../shared/Images/shopping-bag-1699644_1280.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
 
 @media only screen and (max-width: 1400px){
   .How-To{

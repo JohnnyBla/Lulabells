@@ -16,7 +16,7 @@ const CartItem = ({ id, img, name, price, amount }) => {
           style={{ maxWidth: '60px' }}
         />
         <div className='col-6 mx-2 mb-1'>
-          <h5>{name}</h5>
+          <h5 className='mt-3'>{name}</h5>
           <p>
             Price: ${price}
             <MDBBtn
