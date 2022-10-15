@@ -65,7 +65,7 @@ const ShoppingBag = () => {
         </div>
       </MDBNavbar>
       <h1 className='font-monospace text-center ContentTitle'>Your Bag</h1>
-      <div className='row my-4 d-grid mb-5'>
+      <div className='row my-4 d-grid mb-5 '>
         <h2 className='text-center mb-2 ContentTitle'>Appetizers</h2>
 
         {cartItems
